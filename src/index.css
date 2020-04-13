@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.alert-danger{
+  color: #ff0000;
+}
+.alert-success{
+  color: green;
+}
+.alert-warning{
+  color: yellow;
+}
+.alert-info{
+  color: black;
+}

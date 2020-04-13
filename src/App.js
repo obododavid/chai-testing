@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+let React = require('react');
 
-function App() {
+
+const Notification = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      Notification
     </div>
-  );
+  )
+}
+
+
+const App = () => {
+
+  return (
+    <div id='app'>
+      <Notification />
+    </div>
+  )
 }
 
 export default App;
