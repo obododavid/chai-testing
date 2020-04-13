@@ -7,14 +7,6 @@ const toString = ReactDomServer.renderToString;
 const create = React.createElement;
 const App = require('./App')
 
-function withBootstrapStyles() {
-    // return {
-    //     alert_warning: 'red',
-    //     alert_success: 'green',
-    //     alert_info: 'black',
-    //     alert_danger: 'pink',
-    // }
-}
 
 describe('Notification', () => {
     it('should render to some HTML', function () {
