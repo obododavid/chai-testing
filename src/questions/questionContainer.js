@@ -5,7 +5,7 @@ function QuestionContainer(props) {
     // const { questions } = props;
     // const { question, answer } = questions
     return (
-        <div className='question-wrapper'>
+        <div className='question'>
             {/* <p>{question}</p> */}
             {/* {showConfirmation &&  <Confirmation/>} */}
             {/* <p className="question">{question}</p> */}
