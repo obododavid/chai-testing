@@ -3,9 +3,8 @@ let Notification = require('./Notification/notification')
 
 
 function App(props) {
-  const { message, type } = props.notification
+  const { message, type } = props.notification;
   return (<div id='app'>
-    {message}
     {message && <Notification message={message} type={type} />}
   </div>);
 }

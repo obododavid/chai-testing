@@ -4,9 +4,14 @@ import * as serviceWorker from './serviceWorker';
 let React = require('react'),
   App = require('./App');
 
+const notification = {
+  message: 'I am going to be more badass',
+  type: 'success'
+}
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App notification={notification} />
   </React.StrictMode>,
   document.getElementById('root')
 );
