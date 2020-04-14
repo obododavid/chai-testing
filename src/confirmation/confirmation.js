@@ -22,7 +22,7 @@ function Confirmation(props) {
             alertType = 'alert-info';
     }
 
-    return <Notification />
+    return <Notification message={message} />
 
 }
 
