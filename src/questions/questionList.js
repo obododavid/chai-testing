@@ -6,7 +6,8 @@ function QuestionList(props) {
     return (
         <div className='list-wrapper'>
             {questions.map((_questions, i) => {
-                return <QuestionContainer questions={_questions} key={i} />
+                const { question, answer } = _questions
+                return <QuestionContainer question={question} answer={answer} key={i} />
             })}
         </div>
     )

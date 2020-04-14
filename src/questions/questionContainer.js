@@ -2,8 +2,9 @@ let React = require('react');
 let Confirmation = require('../confirmation/confirmation');
 
 function QuestionContainer(props) {
+    const { question, answer } = props
     const [showConfirmation, setShowConfirmation] = React.useState(false)
-    const { question, answer } = props;
+    // const { question, answer } = props.questions.questions;
     return (
         <div className='container'>
             {showConfirmation && <Confirmation />}
