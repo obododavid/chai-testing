@@ -11,7 +11,11 @@ function Confirmation(props) {
             type: 'message',
             accept: function () {
                 // parent component can do something with accept
-                confirm()
+                if (confirm) {
+                    confirm()
+                } else {
+                    alert('accept')
+                }
 
                 // alert('i accest')
             },
