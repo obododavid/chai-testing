@@ -5,10 +5,9 @@ function QuestionContainer(props) {
     const [showConfirmation, setShowConfirmation] = React.useState(false)
     const { question, answer } = props;
     return (
-        <div className='question'>
-            {/* <p>{question}</p> */}
+        <div className='container'>
             {showConfirmation && <Confirmation />}
-            <p className="">{question}</p>
+            <p className="question">{question}</p>
             <div
                 className='btn btn-primary show-answer'
                 onClick={() => setShowConfirmation(!showConfirmation)}>
