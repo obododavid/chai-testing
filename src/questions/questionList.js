@@ -1,6 +1,5 @@
 let React = require('react');
 let QuestionContainer = require('./questionContainer');
-let question_props = require('./questions');
 
 function QuestionList(props) {
     const { questions } = props

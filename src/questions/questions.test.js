@@ -48,7 +48,8 @@ describe('QuestionContainer', function () {
         assert.lengthOf(alerts, 0, 'should be no alert rendered');
     })
     it('should render a confirmation after clicking show answer', function () {
-        let result = renderIntoDocument(create(QuestionContainer, { ...questions[0] }));
+        // let result = renderIntoDocument(create(QuestionContainer, { ...questions[0] }));
+        let result = renderIntoDocument(create(Wrapper, {}, create(QuestionContainer, { ...questions[0] })));
         let showButton = findRenderedDOMComponentWithClass(result, 'btn btn-primary show-answer');
         Simulate.click(showButton);
         let confirmation = findRenderedDOMComponentWithClass(result, 'alert');
