@@ -1,4 +1,5 @@
 let React = require('react');
+let C
 
 function QuestionContainer(props) {
     // const { questions } = props;
