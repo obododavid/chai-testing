@@ -4,13 +4,16 @@ let Notification = require('../Notification/notification');
 
 function Confirmation(props) {
     // const { message, type } = props;
+    const { confirm } = props;
     const state = {
         confirmation: {
             message: 'Should we bake a pie?',
             type: 'message',
             accept: function () {
                 // parent component can do something with accept
-                alert('i accest')
+                confirm()
+
+                // alert('i accest')
             },
             decline: function () {
                 // parent component can do something with decline
@@ -18,6 +21,8 @@ function Confirmation(props) {
             }
         }
     }
+
+
     const { accept, decline, message, type } = state.confirmation
     let alertType;
     switch (type) {
