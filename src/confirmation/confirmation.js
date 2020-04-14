@@ -22,8 +22,11 @@ function Confirmation(props) {
             alertType = 'alert-info';
     }
 
-    return <Notification message={message} />
+    return (
+        <Notification message={message}>
 
+        </Notification>
+    )
 }
 
 module.exports = Confirmation

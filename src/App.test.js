@@ -11,7 +11,7 @@ const create = React.createElement;
 describe('Notification', () => {
     it('should render to some HTML', function () {
         // withBootstrapStyles();
-        let component = create(App, { notification: { message: 'Hello World!', type: 'caution' } });
+        let component = create(App, { notification: { message: 'Hello World!' } });
         console.log('Rendering:<br/>' + toString(component));
         console.log('Actual Markup:<br/>' + esc(toMarkup(component)));
     })
