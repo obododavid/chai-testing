@@ -1,23 +1,13 @@
-import './App.css';
 let React = require('react');
+let Notification = require('./Notification/notification')
 
 
-const Notification = () => {
-  return (
-    <div>
-      Notification
-    </div>
-  )
+function App(props) {
+  const { message, type } = props.notification
+  return (<div id='app'>
+    {message}
+    {message && <Notification message={message} type={type} />}
+  </div>);
 }
 
-
-const App = () => {
-
-  return (
-    <div id='app'>
-      <Notification />
-    </div>
-  )
-}
-
-export default App;
+module.exports = App;
