@@ -23,8 +23,9 @@ function Confirmation(props) {
     }
 
     return (
-        <Notification message={message}>
-
+        <Notification message={message} type={type}>
+            <div className="btn btn-primary" >Sure</div>
+            <div className="btn btn-danger">No Thanks</div>
         </Notification>
     )
 }

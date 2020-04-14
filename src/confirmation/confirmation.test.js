@@ -19,7 +19,6 @@ describe('Confirmation', function () {
     it('should render a notification', function () {
         renderer.render(create(Confirmation, { message: 'Still want the pie?' }));
         const result = renderer.getRenderOutput();
-        console.log(result)
         console.log(result.type)
         assert.equal(result.type, Notification)
     });

@@ -1,7 +1,7 @@
 let React = require('react');
 
 function Notification(props) {
-    const { message, type } = props
+    const { message, type, children } = props
     let alertType;
     switch (type) {
         case 'message':
@@ -22,7 +22,8 @@ function Notification(props) {
 
     return (
         <div className={['alert', alertType].join(' ')}>
-            {message}
+            <p>{message}</p>
+            {children}
         </div>
     )
 }

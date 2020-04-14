@@ -5,7 +5,7 @@ let React = require('react'),
   App = require('./App');
 
 const notification = {
-  message: 'I am going to be more badass',
+  message: 'Would you like a slice of pie?',
   type: 'success'
 }
 
